@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Company;
 
-class CompanySeeder extends Seeder
+class DriverSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +11,6 @@ class CompanySeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Company::class, 20)->create();
+        factory(App\Driver::class, 100)->create();
     }
 }
