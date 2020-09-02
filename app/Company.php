@@ -14,4 +14,11 @@ class Company extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function setName($name) {
+        $this->name = $name;
+        $this->save();
+    }
+
+
 }
